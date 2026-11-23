@@ -1,0 +1,49 @@
+[03:41:44] === Run 'nobal_hard' [v2] (hard labels, 3 students, seed 1) on cuda | budget 250000 (seed 250000) | 4 selection rounds | PGA lam_intra 0.1 lam_old 0.1 | class balance power 0.0 ===
+[03:41:48] Teacher (resnet34) test accuracy 82.20% | teacher query budget 250000 (teacher sees ONLY noise images)
+[03:50:09] [A] 250000 noise images -> teacher | label classes present 94/100, classes with <100 images 39, top-10 classes hold 52.6% of the images
+[03:50:09] [A] training student 1/3 on 250000 images for 1 epochs
+[03:51:30]     A-s0 epoch 1/1  loss 2.4138  lr 0.1000  (81s)
+[03:51:31]     A student 0: test acc 5.54% (top5 14.85%) | agree w/ teacher 5.87% | KL(T||S) 6.030
+[03:51:31] [A] training student 2/3 on 250000 images for 1 epochs
+[03:52:49]     A-s1 epoch 1/1  loss 2.7258  lr 0.1000  (78s)
+[03:52:50]     A student 1: test acc 5.38% (top5 14.90%) | agree w/ teacher 5.68% | KL(T||S) 5.781
+[03:52:50] [A] training student 3/3 on 250000 images for 1 epochs
+[03:54:08]     A-s2 epoch 1/1  loss 2.5874  lr 0.1000  (78s)
+[03:54:09]     A student 2: test acc 5.42% (top5 15.90%) | agree w/ teacher 5.63% | KL(T||S) 5.708
+[03:54:12]     A ENSEMBLE of 3 students: test acc 6.06% (top5 16.13%) | agree w/ teacher 6.35% | KL(T||S) 5.678
+[03:54:12] [B] no selection (the whole budget is the random seed)
+[03:54:12] [B] D = 250000 teacher-labelled noise images | teacher queries 250000 | classes present 94/100, classes with <100 images 39, top-10 classes hold 52.6%
+[03:54:12] [C] training student 1/3 on 250000 images for 40 epochs
+[04:04:33]     C-s0 epoch 8/40  loss 2.1174  lr 0.0923  (620s)
+[04:14:49]     C-s0 epoch 16/40  loss 2.0114  lr 0.0677  (1237s)
+[04:25:07]     C-s0 epoch 24/40  loss 1.9244  lr 0.0361  (1854s)
+[04:34:16]     C-s0 epoch 32/40  loss 1.5648  lr 0.0100  (2403s)
+[04:39:32]     C-s0 epoch 40/40  loss 1.2670  lr 0.0000  (2720s)
+[04:39:33]     C student 0: test acc 23.95% (top5 42.67%) | agree w/ teacher 25.49% | KL(T||S) 5.247
+[04:39:33] [C] training student 2/3 on 250000 images for 40 epochs
+[04:48:13]     C-s1 epoch 8/40  loss 2.1589  lr 0.0923  (521s)
+[04:58:23]     C-s1 epoch 16/40  loss 2.1137  lr 0.0677  (1130s)
+[05:06:51]     C-s1 epoch 24/40  loss 2.1144  lr 0.0361  (1638s)
+[05:16:58]     C-s1 epoch 32/40  loss 1.7163  lr 0.0100  (2246s)
+[05:22:51]     C-s1 epoch 40/40  loss 1.1452  lr 0.0000  (2599s)
+[05:22:52]     C student 1: test acc 25.77% (top5 43.83%) | agree w/ teacher 27.39% | KL(T||S) 4.977
+[05:22:52] [C] training student 3/3 on 250000 images for 40 epochs
+[05:28:17]     C-s2 epoch 8/40  loss 2.1854  lr 0.0923  (325s)
+[05:35:21]     C-s2 epoch 16/40  loss 2.1606  lr 0.0677  (749s)
+[05:41:32]     C-s2 epoch 24/40  loss 1.9796  lr 0.0361  (1120s)
+[05:46:56]     C-s2 epoch 32/40  loss 1.7138  lr 0.0100  (1444s)
+[05:53:33]     C-s2 epoch 40/40  loss 1.1185  lr 0.0000  (1841s)
+[05:53:34]     C student 2: test acc 24.71% (top5 43.21%) | agree w/ teacher 26.14% | KL(T||S) 5.288
+[05:53:37]     C ENSEMBLE of 3 students: test acc 25.76% (top5 43.68%) | agree w/ teacher 27.51% | KL(T||S) 4.893
+[06:34:00]     PGA on student: 20000 images | mean student conf on target 0.444 | reached tau 33.8% | restarts 10487 | intra-class SKL 2.457 | KL(new||old) 1.118
+[06:34:06] [D] kept 7985/20000 PGA images (all 3 students say the target class, ensemble conf >= 0.8) | [diagnostic only, not a query] teacher would agree for 66.1% of them
+[06:42:06] [E] final single resnet18: 250000 teacher-labelled + 7985 PGA + 250000 extra noise (ensemble-labelled, weight 0.5) = 507985 images, 10 epochs
+[06:42:07] [E] starting from the best stage-C student (1, 25.77%), fine-tuning at lr 0.02
+[06:47:15]     final epoch 2/10  loss 1.0532  lr 0.0194  (308s)
+[06:52:24]     final epoch 4/10  loss 0.8905  lr 0.0150  (617s)
+[06:57:33]     final epoch 6/10  loss 1.0131  lr 0.0083  (926s)
+[07:02:42]     final epoch 8/10  loss 0.8105  lr 0.0023  (1235s)
+[07:07:51]     final epoch 10/10  loss 0.5756  lr 0.0000  (1544s)
+[07:07:52]     FINAL single ResNet-18: test acc 25.55% (top5 44.09%) | agree w/ teacher 27.24% | KL(T||S) 4.950
+[07:07:52] 
+Done. Teacher 82.20% | teacher queries 250000 | ensemble of 3: 25.76% | single final student: 25.55%. Results in experiments/v2_kd/nobal_hard

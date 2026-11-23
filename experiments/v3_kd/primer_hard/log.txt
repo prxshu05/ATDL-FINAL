@@ -1,0 +1,24 @@
+[20:20:36] === Run 'primer_hard' [v2] (hard labels, 3 students, seed 1) on cuda | budget 250000 (seed 50000) | 4 selection rounds | PGA lam_intra 0.1 lam_old 0.1 | class balance power 0.5 | mix none | init random | hard_soften 0.5 ===
+[20:20:42] Teacher (resnet34) test accuracy 82.18% | teacher query budget 250000 (teacher sees ONLY noise images)
+[20:20:42] [A] seed loaded from disk (50000 images, teacher queries 50000)
+[20:20:43] [A] student 0: loaded from disk
+[20:20:44] [A] student 1: loaded from disk
+[20:20:45] [A] student 2: loaded from disk
+[20:20:45] [B] selected images loaded from disk (200000, teacher queries 250000)
+[20:20:45] [B] D = 250000 teacher-labelled noise images | teacher queries 250000 | classes present 94/100, classes with <100 images 31, top-10 classes hold 45.0%
+[20:20:46] [C] student 0: loaded from disk
+[20:20:47] [C] student 1: loaded from disk
+[20:20:48] [C] student 2: loaded from disk
+[21:33:30]     PGA on student: 20000 images | mean student conf on target 0.621 | reached tau 45.9% | restarts 7012 | intra-class SKL 2.911 | KL(new||old) 1.018
+[21:33:40] [D] kept 11005/20000 PGA images (all 3 students say the target class, ensemble conf >= 0.8) | [diagnostic only, not a query] teacher would agree for 56.2% of them
+[21:42:10] [E] hard labels softened: 0.5 * teacher one-hot + 0.50 * ensemble softmax (no extra teacher query)
+[21:42:10] [E] final single resnet18: 250000 teacher-labelled + 11005 PGA + 250000 extra noise (ensemble-labelled, weight 0.5) = 511005 images, 10 epochs
+[21:42:10] [E] starting from the best stage-C student (1, 30.97%), fine-tuning at lr 0.02
+[21:50:01]     final epoch 2/10  loss 0.5158  lr 0.0194  (471s)
+[21:57:46]     final epoch 4/10  loss 0.5131  lr 0.0150  (936s)
+[22:05:31]     final epoch 6/10  loss 0.3585  lr 0.0083  (1401s)
+[22:13:16]     final epoch 8/10  loss 0.3526  lr 0.0023  (1866s)
+[22:20:51]     final epoch 10/10  loss 0.3318  lr 0.0000  (2321s)
+[22:20:52]     FINAL single ResNet-18: test acc 30.29% (top5 52.49%) | agree w/ teacher 32.11% | KL(T||S) 4.391
+[22:20:52] 
+Done. Teacher 82.18% | teacher queries 250000 | ensemble of 3: 31.89% | single final student: 30.29%. Results in experiments/v3_kd/primer_hard

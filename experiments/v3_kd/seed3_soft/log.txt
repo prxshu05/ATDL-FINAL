@@ -1,0 +1,116 @@
+[23:29:13] === Run 'seed3_soft' [v2] (soft labels, 3 students, seed 3) on cuda | budget 250000 (seed 50000) | 4 selection rounds | PGA lam_intra 0.1 lam_old 0.1 | class balance power 0.5 | mix none | init random | hard_soften 1.0 ===
+[23:29:19] Teacher (resnet34) test accuracy 82.17% | teacher query budget 250000 (teacher sees ONLY noise images)
+[23:32:53] [A] 50000 noise images -> teacher | label classes present 83/100, classes with <100 images 53, top-10 classes hold 52.5% of the images
+[23:32:54] [A] training student 1/3 on 50000 images for 60 epochs
+[23:37:32]     A-s0 epoch 12/60  loss 0.5760  lr 0.0917  (278s)
+[23:42:05]     A-s0 epoch 24/60  loss 0.4581  lr 0.0670  (551s)
+[23:45:54]     A-s0 epoch 36/60  loss 0.3881  lr 0.0356  (781s)
+[23:49:35]     A-s0 epoch 48/60  loss 0.2839  lr 0.0099  (1001s)
+[23:54:07]     A-s0 epoch 60/60  loss 0.2181  lr 0.0000  (1274s)
+[23:54:09]     A student 0: test acc 25.36% (top5 46.75%) | agree w/ teacher 26.79% | KL(T||S) 3.543
+[23:54:09] [A] training student 2/3 on 50000 images for 60 epochs
+[23:58:42]     A-s1 epoch 12/60  loss 0.5375  lr 0.0917  (273s)
+[00:03:14]     A-s1 epoch 24/60  loss 0.4921  lr 0.0670  (545s)
+[00:07:46]     A-s1 epoch 36/60  loss 0.3852  lr 0.0356  (817s)
+[00:12:18]     A-s1 epoch 48/60  loss 0.2789  lr 0.0099  (1089s)
+[00:16:51]     A-s1 epoch 60/60  loss 0.2166  lr 0.0000  (1361s)
+[00:16:52]     A student 1: test acc 25.71% (top5 46.91%) | agree w/ teacher 27.13% | KL(T||S) 3.634
+[00:16:53] [A] training student 3/3 on 50000 images for 60 epochs
+[00:21:25]     A-s2 epoch 12/60  loss 0.5512  lr 0.0917  (272s)
+[00:25:57]     A-s2 epoch 24/60  loss 0.5685  lr 0.0670  (544s)
+[00:30:29]     A-s2 epoch 36/60  loss 0.4122  lr 0.0356  (816s)
+[00:35:01]     A-s2 epoch 48/60  loss 0.2797  lr 0.0099  (1088s)
+[00:39:00]     A-s2 epoch 60/60  loss 0.2321  lr 0.0000  (1327s)
+[00:39:02]     A student 2: test acc 26.73% (top5 46.76%) | agree w/ teacher 28.30% | KL(T||S) 3.494
+[00:39:07]     A ENSEMBLE of 3 students: test acc 27.12% (top5 47.79%) | agree w/ teacher 28.73% | KL(T||S) 3.376
+[00:39:07] [B] round 1/4: scoring 400,000 free noise images with the 3 students, choosing 50000 (quota per class 250-619)
+[01:01:14] [B] round 1: 50000 images -> teacher | teacher gives the intended class for 21.2% | disagreement selected 0.135 vs pool 0.066 | D so far: classes present 91/100, classes with <100 images 37, top-10 classes hold 45.0% | teacher queries 100000
+[01:02:25]     B1-s0 epoch 2/10  loss 0.5915  lr 0.0485  (72s)
+[01:03:28]     B1-s0 epoch 4/10  loss 0.5147  lr 0.0375  (135s)
+[01:04:32]     B1-s0 epoch 6/10  loss 0.4233  lr 0.0207  (198s)
+[01:05:42]     B1-s0 epoch 8/10  loss 0.3285  lr 0.0058  (268s)
+[01:06:47]     B1-s0 epoch 10/10  loss 0.2961  lr 0.0000  (334s)
+[01:07:51]     B1-s1 epoch 2/10  loss 0.6081  lr 0.0485  (64s)
+[01:08:53]     B1-s1 epoch 4/10  loss 0.4190  lr 0.0375  (126s)
+[01:10:05]     B1-s1 epoch 6/10  loss 0.4170  lr 0.0207  (197s)
+[01:11:08]     B1-s1 epoch 8/10  loss 0.3795  lr 0.0058  (261s)
+[01:12:11]     B1-s1 epoch 10/10  loss 0.3154  lr 0.0000  (324s)
+[01:13:26]     B1-s2 epoch 2/10  loss 0.4597  lr 0.0485  (75s)
+[01:14:58]     B1-s2 epoch 4/10  loss 0.5357  lr 0.0375  (167s)
+[01:16:30]     B1-s2 epoch 6/10  loss 0.4373  lr 0.0207  (259s)
+[01:18:02]     B1-s2 epoch 8/10  loss 0.3445  lr 0.0058  (351s)
+[01:19:34]     B1-s2 epoch 10/10  loss 0.3675  lr 0.0000  (443s)
+[01:19:38]     B round 1 ENSEMBLE (fine-tuned): test acc 31.76% (top5 53.23%) | agree w/ teacher 33.66% | KL(T||S) 3.100
+[01:19:39] [B] round 2/4: scoring 400,000 free noise images with the 3 students, choosing 50000 (quota per class 250-677)
+[01:37:53] [B] round 2: 50000 images -> teacher | teacher gives the intended class for 19.5% | disagreement selected 0.098 vs pool 0.047 | D so far: classes present 94/100, classes with <100 images 32, top-10 classes hold 43.2% | teacher queries 150000
+[01:38:51]     B2-s0 epoch 2/10  loss 0.5833  lr 0.0485  (58s)
+[01:39:41]     B2-s0 epoch 4/10  loss 0.4699  lr 0.0375  (108s)
+[01:40:40]     B2-s0 epoch 6/10  loss 0.4626  lr 0.0207  (166s)
+[01:41:30]     B2-s0 epoch 8/10  loss 0.4075  lr 0.0058  (216s)
+[01:43:01]     B2-s0 epoch 10/10  loss 0.3033  lr 0.0000  (308s)
+[01:44:34]     B2-s1 epoch 2/10  loss 0.5536  lr 0.0485  (92s)
+[01:46:07]     B2-s1 epoch 4/10  loss 0.5736  lr 0.0375  (186s)
+[01:48:24]     B2-s1 epoch 6/10  loss 0.4542  lr 0.0207  (323s)
+[01:50:40]     B2-s1 epoch 8/10  loss 0.3577  lr 0.0058  (459s)
+[01:52:56]     B2-s1 epoch 10/10  loss 0.3302  lr 0.0000  (595s)
+[01:55:13]     B2-s2 epoch 2/10  loss 0.4721  lr 0.0485  (136s)
+[01:57:29]     B2-s2 epoch 4/10  loss 0.4936  lr 0.0375  (272s)
+[01:59:45]     B2-s2 epoch 6/10  loss 0.3780  lr 0.0207  (409s)
+[02:02:01]     B2-s2 epoch 8/10  loss 0.3484  lr 0.0058  (545s)
+[02:04:17]     B2-s2 epoch 10/10  loss 0.3399  lr 0.0000  (681s)
+[02:04:22]     B round 2 ENSEMBLE (fine-tuned): test acc 35.24% (top5 57.44%) | agree w/ teacher 37.37% | KL(T||S) 2.804
+[02:04:22] [B] round 3/4: scoring 400,000 free noise images with the 3 students, choosing 50000 (quota per class 250-705)
+[02:24:29] [B] round 3: 50000 images -> teacher | teacher gives the intended class for 19.2% | disagreement selected 0.089 vs pool 0.043 | D so far: classes present 94/100, classes with <100 images 31, top-10 classes hold 42.5% | teacher queries 200000
+[02:25:44]     B3-s0 epoch 2/10  loss 0.4601  lr 0.0485  (74s)
+[02:26:50]     B3-s0 epoch 4/10  loss 0.5305  lr 0.0375  (141s)
+[02:28:05]     B3-s0 epoch 6/10  loss 0.4838  lr 0.0207  (216s)
+[02:29:20]     B3-s0 epoch 8/10  loss 0.3721  lr 0.0058  (291s)
+[02:30:27]     B3-s0 epoch 10/10  loss 0.3222  lr 0.0000  (357s)
+[02:32:19]     B3-s1 epoch 2/10  loss 0.4939  lr 0.0485  (112s)
+[02:34:41]     B3-s1 epoch 4/10  loss 0.6384  lr 0.0375  (255s)
+[02:37:41]     B3-s1 epoch 6/10  loss 0.3977  lr 0.0207  (434s)
+[02:40:43]     B3-s1 epoch 8/10  loss 0.3968  lr 0.0058  (616s)
+[02:43:45]     B3-s1 epoch 10/10  loss 0.3617  lr 0.0000  (798s)
+[02:46:47]     B3-s2 epoch 2/10  loss 0.5466  lr 0.0485  (182s)
+[02:49:49]     B3-s2 epoch 4/10  loss 0.4828  lr 0.0375  (364s)
+[02:52:51]     B3-s2 epoch 6/10  loss 0.4626  lr 0.0207  (546s)
+[02:55:53]     B3-s2 epoch 8/10  loss 0.3731  lr 0.0058  (728s)
+[02:58:56]     B3-s2 epoch 10/10  loss 0.3364  lr 0.0000  (911s)
+[02:59:00]     B round 3 ENSEMBLE (fine-tuned): test acc 37.88% (top5 59.94%) | agree w/ teacher 40.20% | KL(T||S) 2.621
+[02:59:00] [B] round 4/4: scoring 400,000 free noise images with the 3 students, choosing 50000 (quota per class 250-721)
+[03:20:53] [B] round 4: 50000 images -> teacher | teacher gives the intended class for 19.0% | disagreement selected 0.083 vs pool 0.040 | D so far: classes present 94/100, classes with <100 images 30, top-10 classes hold 42.1% | teacher queries 250000
+[03:20:53] [B] D = 250000 teacher-labelled noise images | teacher queries 250000 | classes present 94/100, classes with <100 images 30, top-10 classes hold 42.1%
+[03:20:53] [C] training student 1/3 on 250000 images for 40 epochs
+[03:31:07]     C-s0 epoch 8/40  loss 0.5809  lr 0.0923  (614s)
+[03:41:15]     C-s0 epoch 16/40  loss 0.5904  lr 0.0677  (1222s)
+[03:54:05]     C-s0 epoch 24/40  loss 0.5243  lr 0.0361  (1991s)
+[04:09:15]     C-s0 epoch 32/40  loss 0.3897  lr 0.0100  (2901s)
+[04:24:24]     C-s0 epoch 40/40  loss 0.3339  lr 0.0000  (3811s)
+[04:24:26]     C student 0: test acc 41.31% (top5 64.08%) | agree w/ teacher 43.48% | KL(T||S) 2.499
+[04:24:27] [C] training student 2/3 on 250000 images for 40 epochs
+[04:39:38]     C-s1 epoch 8/40  loss 0.5776  lr 0.0923  (911s)
+[04:54:48]     C-s1 epoch 16/40  loss 0.5649  lr 0.0677  (1822s)
+[05:09:15]     C-s1 epoch 24/40  loss 0.5664  lr 0.0361  (2689s)
+[05:24:23]     C-s1 epoch 32/40  loss 0.3716  lr 0.0100  (3597s)
+[05:39:31]     C-s1 epoch 40/40  loss 0.3043  lr 0.0000  (4504s)
+[05:39:32]     C student 1: test acc 41.95% (top5 64.70%) | agree w/ teacher 44.27% | KL(T||S) 2.455
+[05:39:33] [C] training student 3/3 on 250000 images for 40 epochs
+[05:54:02]     C-s2 epoch 8/40  loss 0.5933  lr 0.0923  (869s)
+[06:05:02]     C-s2 epoch 16/40  loss 0.5597  lr 0.0677  (1529s)
+[06:18:11]     C-s2 epoch 24/40  loss 0.4829  lr 0.0361  (2318s)
+[06:30:30]     C-s2 epoch 32/40  loss 0.3644  lr 0.0100  (3057s)
+[06:43:37]     C-s2 epoch 40/40  loss 0.3436  lr 0.0000  (3844s)
+[06:43:38]     C student 2: test acc 41.71% (top5 64.66%) | agree w/ teacher 43.83% | KL(T||S) 2.459
+[06:43:42]     C ENSEMBLE of 3 students: test acc 42.75% (top5 65.28%) | agree w/ teacher 45.10% | KL(T||S) 2.321
+[08:08:44]     PGA on student: 20000 images | mean student conf on target 0.579 | reached tau 46.8% | restarts 8134 | intra-class SKL 1.216 | KL(new||old) 0.434
+[08:08:59] [D] kept 10815/20000 PGA images (all 3 students say the target class, ensemble conf >= 0.8) | [diagnostic only, not a query] teacher would agree for 90.6% of them
+[08:24:26] [E] final single resnet18: 250000 teacher-labelled + 10815 PGA + 250000 extra noise (ensemble-labelled, weight 0.5) = 510815 images, 10 epochs
+[08:24:27] [E] starting from the best stage-C student (1, 41.95%), fine-tuning at lr 0.02
+[08:29:45]     final epoch 2/10  loss 0.2744  lr 0.0194  (318s)
+[08:35:18]     final epoch 4/10  loss 0.2391  lr 0.0150  (651s)
+[08:43:04]     final epoch 6/10  loss 0.2491  lr 0.0083  (1117s)
+[08:50:48]     final epoch 8/10  loss 0.2214  lr 0.0023  (1582s)
+[08:58:33]     final epoch 10/10  loss 0.1628  lr 0.0000  (2046s)
+[08:58:34]     FINAL single ResNet-18: test acc 40.89% (top5 64.28%) | agree w/ teacher 43.48% | KL(T||S) 2.570
+[08:58:34] 
+Done. Teacher 82.17% | teacher queries 250000 | ensemble of 3: 42.75% | single final student: 40.89%. Results in experiments/v3_kd/seed3_soft

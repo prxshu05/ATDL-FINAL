@@ -1,0 +1,319 @@
+{
+ "soft": {
+  "v2_final": [
+   41.44333302974701,
+   0.5707312579354349
+  ],
+  "v2_ens": [
+   43.006667494773865,
+   0.2236811768943782
+  ],
+  "base": [
+   34.9949985742569,
+   0.5586143301633895
+  ],
+  "prof": 36.10000014305115,
+  "b50k": 31.139999628067017,
+  "b100k": 37.02000081539154,
+  "b500k": 44.530001282691956,
+  "b500k_ens": 45.80000042915344,
+  "base500k": 37.90000081062317,
+  "b50k_ens": 32.15000033378601,
+  "b100k_ens": 38.8700008392334,
+  "v3": 40.790000557899475,
+  "v3b100k": 36.62000000476837,
+  "nobal": 34.95999872684479,
+  "one": 38.92999887466431,
+  "nodiv": 42.68999993801117,
+  "nopga": 41.65999889373779,
+  "lam1": 41.850000619888306,
+  "mix": 36.559998989105225,
+  "sim": 42.010000348091125,
+  "v2s1": 42.03000068664551,
+  "v2s1_ens": 43.16000044345856,
+  "C_range": [
+   40.68000018596649,
+   42.329999804496765
+  ],
+  "pga": {
+   "generated": 20000,
+   "kept": 10778,
+   "diag_teacher_agrees_with_kept": 90.4991626739502,
+   "conf": 0.5780759666442871,
+   "reached_tau": 0.4622,
+   "restarts": 8192,
+   "intra_skl": 1.2382133275270462,
+   "kl_new_old": 0.5191734198480844,
+   "student_passes": 6000000
+  },
+  "pga_nodiv": {
+   "generated": 20000,
+   "kept": 10906,
+   "diag_teacher_agrees_with_kept": 91.37172102928162,
+   "conf": 0.5779556571960449,
+   "reached_tau": 0.47475,
+   "restarts": 8246,
+   "intra_skl": 0.0,
+   "kl_new_old": 0.0,
+   "student_passes": 6000000
+  },
+  "pga_lam1": {
+   "generated": 20000,
+   "kept": 3289,
+   "diag_teacher_agrees_with_kept": 86.86530590057373,
+   "conf": 0.2639540031433105,
+   "reached_tau": 0.13495,
+   "restarts": 14783,
+   "intra_skl": 4.888019168376923,
+   "kl_new_old": 1.870933735370636,
+   "student_passes": 6000000
+  },
+  "rounds": [
+   {
+    "round": 1,
+    "n": 50000,
+    "teacher_label_is_intended_class": 21.063999831676483,
+    "disagreement_selected": 0.13456203043460846,
+    "disagreement_pool": 0.0657861977815628,
+    "classes_present": 92,
+    "classes_below_100": 38,
+    "top10_share": 44.754,
+    "teacher_queries": 100000,
+    "ensemble_acc_after": 32.30000138282776
+   },
+   {
+    "round": 2,
+    "n": 50000,
+    "teacher_label_is_intended_class": 19.402000308036804,
+    "disagreement_selected": 0.09810879081487656,
+    "disagreement_pool": 0.04753860831260681,
+    "classes_present": 93,
+    "classes_below_100": 32,
+    "top10_share": 43.05533333333333,
+    "teacher_queries": 150000,
+    "ensemble_acc_after": 37.059998512268066
+   },
+   {
+    "round": 3,
+    "n": 50000,
+    "teacher_label_is_intended_class": 19.16400045156479,
+    "disagreement_selected": 0.08881306648254395,
+    "disagreement_pool": 0.042738012969493866,
+    "classes_present": 94,
+    "classes_below_100": 31,
+    "top10_share": 42.3295,
+    "teacher_queries": 200000,
+    "ensemble_acc_after": 38.7800008058548
+   },
+   {
+    "round": 4,
+    "n": 50000,
+    "teacher_label_is_intended_class": 18.75399947166443,
+    "disagreement_selected": 0.08205538988113403,
+    "disagreement_pool": 0.03950706869363785,
+    "classes_present": 95,
+    "classes_below_100": 31,
+    "top10_share": 42.0072,
+    "teacher_queries": 250000
+   }
+  ],
+  "A_ens": 25.690001249313354,
+  "D": {
+   "size": 250000,
+   "teacher_queries": 250000,
+   "classes_present": 95,
+   "classes_below_100": 31,
+   "top10_share": 42.0072
+  },
+  "D_base": {
+   "size": 250000,
+   "teacher_queries": 250000,
+   "classes_present": 94,
+   "classes_below_100": 39,
+   "top10_share": 52.5652
+  },
+  "primer": null,
+  "pga100k": 42.62999892234802
+ },
+ "hard": {
+  "v2_final": [
+   30.49333393573761,
+   0.9729505222130661
+  ],
+  "v2_ens": [
+   31.31999969482422,
+   0.5855753292343706
+  ],
+  "base": [
+   24.479999393224716,
+   0.18384771421815807
+  ],
+  "prof": 25.709998607635498,
+  "b50k": 14.990000426769257,
+  "b100k": 21.400000154972076,
+  "b500k": 33.95000100135803,
+  "b500k_ens": 35.1500004529953,
+  "base500k": 27.340000867843628,
+  "b50k_ens": 14.740000665187836,
+  "b100k_ens": 21.160000562667847,
+  "v3": 30.410000681877136,
+  "v3b100k": 22.349999845027924,
+  "nobal": 25.549998879432678,
+  "one": 29.580000042915344,
+  "nodiv": 30.649998784065247,
+  "nopga": 31.49999976158142,
+  "lam1": 31.229999661445618,
+  "mix": 25.81999897956848,
+  "sim": 29.94999885559082,
+  "v2s1": 31.040000915527344,
+  "v2s1_ens": 31.88999891281128,
+  "C_range": [
+   29.080000519752502,
+   30.970001220703125
+  ],
+  "pga": {
+   "generated": 20000,
+   "kept": 11027,
+   "diag_teacher_agrees_with_kept": 56.243765354156494,
+   "conf": 0.6222086639404297,
+   "reached_tau": 0.45735,
+   "restarts": 6878,
+   "intra_skl": 2.8894289553165438,
+   "kl_new_old": 1.0170475870370865,
+   "student_passes": 6000000
+  },
+  "pga_nodiv": {
+   "generated": 20000,
+   "kept": 11685,
+   "diag_teacher_agrees_with_kept": 54.59991693496704,
+   "conf": 0.6348095474243164,
+   "reached_tau": 0.50665,
+   "restarts": 6722,
+   "intra_skl": 0.0,
+   "kl_new_old": 0.0,
+   "student_passes": 6000000
+  },
+  "pga_lam1": {
+   "generated": 20000,
+   "kept": 2776,
+   "diag_teacher_agrees_with_kept": 76.90922021865845,
+   "conf": 0.27369435939788817,
+   "reached_tau": 0.11265,
+   "restarts": 14869,
+   "intra_skl": 4.925415802001953,
+   "kl_new_old": 2.7939843207597734,
+   "student_passes": 6000000
+  },
+  "rounds": [
+   {
+    "round": 1,
+    "n": 50000,
+    "teacher_label_is_intended_class": 9.421999752521515,
+    "disagreement_selected": 0.5559723377227783,
+    "disagreement_pool": 0.2733514904975891,
+    "classes_present": 91,
+    "classes_below_100": 41,
+    "top10_share": 46.0,
+    "teacher_queries": 100000,
+    "ensemble_acc_after": 21.649999916553497
+   },
+   {
+    "round": 2,
+    "n": 50000,
+    "teacher_label_is_intended_class": 10.89399978518486,
+    "disagreement_selected": 0.2253490686416626,
+    "disagreement_pool": 0.1107211634516716,
+    "classes_present": 92,
+    "classes_below_100": 34,
+    "top10_share": 45.14533333333333,
+    "teacher_queries": 150000,
+    "ensemble_acc_after": 25.72000026702881
+   },
+   {
+    "round": 3,
+    "n": 50000,
+    "teacher_label_is_intended_class": 11.377999931573868,
+    "disagreement_selected": 0.17583595216274261,
+    "disagreement_pool": 0.08532052487134933,
+    "classes_present": 93,
+    "classes_below_100": 32,
+    "top10_share": 44.9955,
+    "teacher_queries": 200000,
+    "ensemble_acc_after": 27.489998936653137
+   },
+   {
+    "round": 4,
+    "n": 50000,
+    "teacher_label_is_intended_class": 11.420000344514847,
+    "disagreement_selected": 0.1509351134300232,
+    "disagreement_pool": 0.07303933054208755,
+    "classes_present": 94,
+    "classes_below_100": 31,
+    "top10_share": 45.0308,
+    "teacher_queries": 250000
+   }
+  ],
+  "A_ens": 14.740000665187836,
+  "D": {
+   "size": 250000,
+   "teacher_queries": 250000,
+   "classes_present": 94,
+   "classes_below_100": 31,
+   "top10_share": 45.0308
+  },
+  "D_base": {
+   "size": 250000,
+   "teacher_queries": 250000,
+   "classes_present": 94,
+   "classes_below_100": 39,
+   "top10_share": 52.5656
+  },
+  "primer": 30.289998650550842
+ },
+ "teacher": 82.19000101089478,
+ "imbalance": {
+  "random_top10": 52.565200000000004,
+  "sel_top10": 42.0072,
+  "random_lt100": 39,
+  "sel_lt100": 31,
+  "random_zero": 6,
+  "sel_zero": 5
+ },
+ "diversity": {
+  "\u03bb = 0 (no diversity)": {
+   "mean_pairwise_SKL_same_class": 0.7488763740697464,
+   "kept": 10906
+  },
+  "\u03bb = 0.1 (v2)": {
+   "mean_pairwise_SKL_same_class": 1.1529488455165515,
+   "kept": 10778
+  },
+  "\u03bb = 1.0": {
+   "mean_pairwise_SKL_same_class": 3.4699651770017765,
+   "kept": 3289
+  },
+  "class": "orchid"
+ },
+ "perclass": {
+  "spearman_base": 0.8101530153015302,
+  "spearman_v2": 0.6393159315931592,
+  "zero_acc_base": 32,
+  "zero_acc_v2": 22,
+  "lt10_base": 39,
+  "lt10_v2": 26,
+  "improved": 45,
+  "degraded": 29,
+  "median_gain": 0.0
+ },
+ "entropy_bits": {
+  "random": 5.11245313105381,
+  "selected": 5.544593095912296,
+  "uniform": 6.643856189774724,
+  "eff_classes_random": 34.59407669197614,
+  "eff_classes_selected": 46.67548459898006
+ },
+ "final_top5": {
+  "soft": 64.02000188827515,
+  "hard": 53.07999849319458
+ }
+}

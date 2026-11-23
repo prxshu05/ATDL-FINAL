@@ -1,0 +1,23 @@
+[22:20:21] === Run 'lam1_hard' [v2] (hard labels, 3 students, seed 1) on cuda | budget 250000 (seed 50000) | 4 selection rounds | PGA lam_intra 1.0 lam_old 1.0 | class balance power 0.5 | mix none | init random | hard_soften 1.0 ===
+[22:20:27] Teacher (resnet34) test accuracy 82.20% | teacher query budget 250000 (teacher sees ONLY noise images)
+[22:20:27] [A] seed loaded from disk (50000 images, teacher queries 50000)
+[22:20:28] [A] student 0: loaded from disk
+[22:20:29] [A] student 1: loaded from disk
+[22:20:30] [A] student 2: loaded from disk
+[22:20:30] [B] selected images loaded from disk (200000, teacher queries 250000)
+[22:20:30] [B] D = 250000 teacher-labelled noise images | teacher queries 250000 | classes present 94/100, classes with <100 images 31, top-10 classes hold 45.0%
+[22:20:31] [C] student 0: loaded from disk
+[22:20:32] [C] student 1: loaded from disk
+[22:20:32] [C] student 2: loaded from disk
+[23:31:18]     PGA on student: 20000 images | mean student conf on target 0.274 | reached tau 11.3% | restarts 14869 | intra-class SKL 4.925 | KL(new||old) 2.794
+[23:31:29] [D] kept 2776/20000 PGA images (all 3 students say the target class, ensemble conf >= 0.8) | [diagnostic only, not a query] teacher would agree for 76.9% of them
+[23:47:27] [E] final single resnet18: 250000 teacher-labelled + 2776 PGA + 250000 extra noise (ensemble-labelled, weight 0.5) = 502776 images, 10 epochs
+[23:47:28] [E] starting from the best stage-C student (1, 30.97%), fine-tuning at lr 0.02
+[23:55:12]     final epoch 2/10  loss 1.1921  lr 0.0194  (464s)
+[00:02:50]     final epoch 4/10  loss 1.5112  lr 0.0150  (922s)
+[00:10:27]     final epoch 6/10  loss 1.2256  lr 0.0083  (1379s)
+[00:18:05]     final epoch 8/10  loss 0.7423  lr 0.0023  (1837s)
+[00:25:43]     final epoch 10/10  loss 0.7861  lr 0.0000  (2295s)
+[00:25:44]     FINAL single ResNet-18: test acc 31.23% (top5 53.50%) | agree w/ teacher 33.00% | KL(T||S) 4.256
+[00:25:44] 
+Done. Teacher 82.20% | teacher queries 250000 | ensemble of 3: 31.89% | single final student: 31.23%. Results in experiments/v3_kd/lam1_hard

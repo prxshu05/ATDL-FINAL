@@ -1,0 +1,19 @@
+[17:37:19] === Run 'prof_soft' [v2] (soft labels, 1 students, seed 1) on cuda | budget 250000 (seed 250000) | 4 selection rounds | PGA lam_intra 0.1 lam_old 0.1 | class balance power 0.0 | mix none | init random | hard_soften 1.0 ===
+[17:37:21] Teacher (resnet34) test accuracy 82.16% | teacher query budget 250000 (teacher sees ONLY noise images)
+[17:37:21] [A] seed loaded from disk (250000 images, teacher queries 250000)
+[17:37:21] [A] student 0: loaded from disk
+[17:37:21] [B] no selection (the whole budget is the random seed)
+[17:37:22] [B] D = 250000 teacher-labelled noise images | teacher queries 250000 | classes present 94/100, classes with <100 images 39, top-10 classes hold 52.6%
+[17:37:22] [C] student 0: loaded from disk
+[18:05:57]     PGA on student: 20000 images | mean student conf on target 0.502 | reached tau 37.8% | restarts 9519 | intra-class SKL 1.141 | KL(new||old) 0.662
+[18:06:06] [D] kept 8953/20000 PGA images (all 1 students say the target class, ensemble conf >= 0.8) | [diagnostic only, not a query] teacher would agree for 87.1% of them
+[18:06:06] [E] final single resnet18: 250000 teacher-labelled + 8953 PGA + 0 extra noise (ensemble-labelled, weight 0.5) = 258953 images, 10 epochs
+[18:06:07] [E] starting from the best stage-C student (0, 35.39%), fine-tuning at lr 0.02
+[18:10:14]     final epoch 2/10  loss 0.3613  lr 0.0194  (247s)
+[18:13:11]     final epoch 4/10  loss 0.3689  lr 0.0150  (423s)
+[18:15:53]     final epoch 6/10  loss 0.3308  lr 0.0083  (586s)
+[18:18:36]     final epoch 8/10  loss 0.3130  lr 0.0023  (749s)
+[18:21:18]     final epoch 10/10  loss 0.2810  lr 0.0000  (911s)
+[18:21:19]     FINAL single ResNet-18: test acc 36.10% (top5 57.51%) | agree w/ teacher 38.10% | KL(T||S) 2.821
+[18:21:19] 
+Done. Teacher 82.16% | teacher queries 250000 | ensemble of 1: 35.39% | single final student: 36.10%. Results in experiments/v3_kd/prof_soft

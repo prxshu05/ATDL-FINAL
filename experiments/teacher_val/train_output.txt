@@ -1,0 +1,203 @@
+Validation split: 5000 of the training images held out (checkpoint chosen on these, not on test)
+Device cuda | train 45000 | test 10000 | arch resnet34 | epochs 200
+Epoch   1/200  loss 4.2956  val acc 11.68%  test acc 11.88%  top5 35.63%  (26s)  <- best, saved
+Epoch   2/200  loss 3.7818  val acc 20.20%  test acc 20.52%  top5 49.53%  (22s)  <- best, saved
+Epoch   3/200  loss 3.3843  val acc 27.78%  test acc 26.76%  top5 58.59%  (22s)  <- best, saved
+Epoch   4/200  loss 3.1405  val acc 34.72%  test acc 34.50%  top5 66.31%  (22s)  <- best, saved
+Epoch   5/200  loss 2.8817  val acc 39.56%  test acc 39.52%  top5 72.49%  (22s)  <- best, saved
+Epoch   6/200  loss 2.7077  val acc 44.42%  test acc 43.84%  top5 76.69%  (22s)  <- best, saved
+Epoch   7/200  loss 2.6202  val acc 46.24%  test acc 44.96%  top5 76.92%  (22s)  <- best, saved
+Epoch   8/200  loss 2.4915  val acc 49.46%  test acc 48.36%  top5 80.41%  (22s)  <- best, saved
+Epoch   9/200  loss 2.4097  val acc 49.38%  test acc 49.72%  top5 80.85%  (22s)
+Epoch  10/200  loss 2.3381  val acc 52.44%  test acc 51.98%  top5 82.63%  (22s)  <- best, saved
+Epoch  11/200  loss 2.2144  val acc 49.50%  test acc 49.66%  top5 79.91%  (22s)
+Epoch  12/200  loss 2.2349  val acc 50.86%  test acc 50.45%  top5 80.01%  (22s)
+Epoch  13/200  loss 2.2647  val acc 48.12%  test acc 47.97%  top5 79.94%  (22s)
+Epoch  14/200  loss 2.1730  val acc 52.26%  test acc 52.88%  top5 83.45%  (22s)
+Epoch  15/200  loss 2.1308  val acc 53.46%  test acc 53.34%  top5 83.86%  (22s)  <- best, saved
+Epoch  16/200  loss 2.0926  val acc 56.78%  test acc 56.64%  top5 84.52%  (22s)  <- best, saved
+Epoch  17/200  loss 2.1242  val acc 53.88%  test acc 53.50%  top5 83.34%  (22s)
+Epoch  18/200  loss 2.1029  val acc 58.02%  test acc 56.92%  top5 84.88%  (21s)  <- best, saved
+Epoch  19/200  loss 2.0037  val acc 53.06%  test acc 53.01%  top5 80.93%  (22s)
+Epoch  20/200  loss 2.0433  val acc 57.86%  test acc 57.69%  top5 85.30%  (22s)
+Epoch  21/200  loss 2.0680  val acc 52.34%  test acc 52.42%  top5 82.14%  (22s)
+Epoch  22/200  loss 2.0294  val acc 57.00%  test acc 57.15%  top5 84.80%  (22s)
+Epoch  23/200  loss 1.9954  val acc 58.40%  test acc 58.33%  top5 86.19%  (22s)  <- best, saved
+Epoch  24/200  loss 1.8879  val acc 56.24%  test acc 55.66%  top5 84.82%  (22s)
+Epoch  25/200  loss 1.9690  val acc 58.22%  test acc 57.37%  top5 84.93%  (22s)
+Epoch  26/200  loss 1.9452  val acc 56.68%  test acc 57.25%  top5 84.72%  (22s)
+Epoch  27/200  loss 1.9494  val acc 58.62%  test acc 58.46%  top5 85.69%  (22s)  <- best, saved
+Epoch  28/200  loss 1.9914  val acc 57.52%  test acc 58.09%  top5 85.91%  (22s)
+Epoch  29/200  loss 1.9282  val acc 56.40%  test acc 57.05%  top5 84.46%  (22s)
+Epoch  30/200  loss 1.9067  val acc 57.98%  test acc 58.18%  top5 85.47%  (22s)
+Epoch  31/200  loss 1.9371  val acc 59.60%  test acc 59.81%  top5 87.22%  (22s)  <- best, saved
+Epoch  32/200  loss 1.9488  val acc 59.32%  test acc 59.35%  top5 86.66%  (21s)
+Epoch  33/200  loss 1.9209  val acc 64.26%  test acc 64.58%  top5 89.10%  (22s)  <- best, saved
+Epoch  34/200  loss 1.8976  val acc 60.96%  test acc 60.41%  top5 87.11%  (21s)
+Epoch  35/200  loss 1.7703  val acc 59.80%  test acc 59.34%  top5 85.83%  (21s)
+Epoch  36/200  loss 1.8308  val acc 59.92%  test acc 59.66%  top5 87.16%  (21s)
+Epoch  37/200  loss 1.9020  val acc 62.02%  test acc 61.45%  top5 88.04%  (21s)
+Epoch  38/200  loss 1.8394  val acc 58.82%  test acc 58.40%  top5 86.83%  (21s)
+Epoch  39/200  loss 1.8846  val acc 58.26%  test acc 58.38%  top5 85.54%  (21s)
+Epoch  40/200  loss 1.8519  val acc 54.72%  test acc 55.59%  top5 82.87%  (21s)
+Epoch  41/200  loss 1.8454  val acc 59.80%  test acc 59.44%  top5 86.90%  (22s)
+Epoch  42/200  loss 1.8147  val acc 60.56%  test acc 59.27%  top5 86.24%  (22s)
+Epoch  43/200  loss 1.7267  val acc 59.54%  test acc 59.50%  top5 86.86%  (21s)
+Epoch  44/200  loss 1.7625  val acc 62.74%  test acc 62.06%  top5 88.10%  (21s)
+Epoch  45/200  loss 1.7948  val acc 60.38%  test acc 61.20%  top5 87.60%  (21s)
+Epoch  46/200  loss 1.8034  val acc 59.72%  test acc 60.10%  top5 87.53%  (21s)
+Epoch  47/200  loss 1.7863  val acc 61.52%  test acc 60.83%  top5 87.47%  (21s)
+Epoch  48/200  loss 1.7335  val acc 61.00%  test acc 60.51%  top5 87.55%  (21s)
+Epoch  49/200  loss 1.7705  val acc 61.50%  test acc 61.94%  top5 88.01%  (21s)
+Epoch  50/200  loss 1.7893  val acc 56.60%  test acc 57.36%  top5 84.49%  (21s)
+Epoch  51/200  loss 1.7560  val acc 59.66%  test acc 60.46%  top5 86.95%  (21s)
+Epoch  52/200  loss 1.7383  val acc 61.52%  test acc 60.31%  top5 86.79%  (21s)
+Epoch  53/200  loss 1.7142  val acc 60.92%  test acc 61.97%  top5 87.70%  (21s)
+Epoch  54/200  loss 1.7402  val acc 57.48%  test acc 57.96%  top5 85.36%  (21s)
+Epoch  55/200  loss 1.7569  val acc 61.76%  test acc 61.37%  top5 87.49%  (21s)
+Epoch  56/200  loss 1.7548  val acc 54.74%  test acc 54.88%  top5 82.90%  (21s)
+Epoch  57/200  loss 1.7464  val acc 62.62%  test acc 62.91%  top5 88.38%  (21s)
+Epoch  58/200  loss 1.7391  val acc 62.60%  test acc 62.61%  top5 87.80%  (21s)
+Epoch  59/200  loss 1.7806  val acc 62.00%  test acc 62.45%  top5 88.08%  (21s)
+Epoch  60/200  loss 1.7008  val acc 61.70%  test acc 61.93%  top5 88.39%  (21s)
+Epoch  61/200  loss 1.7941  val acc 59.60%  test acc 60.08%  top5 86.74%  (22s)
+Epoch  62/200  loss 1.6713  val acc 61.56%  test acc 61.80%  top5 87.42%  (22s)
+Epoch  63/200  loss 1.6922  val acc 60.68%  test acc 60.50%  top5 87.06%  (21s)
+Epoch  64/200  loss 1.7791  val acc 62.24%  test acc 62.38%  top5 86.82%  (22s)
+Epoch  65/200  loss 1.7216  val acc 62.84%  test acc 63.58%  top5 88.17%  (21s)
+Epoch  66/200  loss 1.7641  val acc 62.68%  test acc 63.05%  top5 88.13%  (22s)
+Epoch  67/200  loss 1.6860  val acc 64.80%  test acc 65.02%  top5 89.44%  (22s)  <- best, saved
+Epoch  68/200  loss 1.6668  val acc 62.98%  test acc 62.62%  top5 88.42%  (22s)
+Epoch  69/200  loss 1.7618  val acc 64.64%  test acc 64.96%  top5 89.17%  (22s)
+Epoch  70/200  loss 1.7286  val acc 62.06%  test acc 61.37%  top5 86.81%  (22s)
+Epoch  71/200  loss 1.6641  val acc 61.96%  test acc 61.43%  top5 87.85%  (21s)
+Epoch  72/200  loss 1.7123  val acc 59.04%  test acc 58.37%  top5 85.07%  (21s)
+Epoch  73/200  loss 1.6190  val acc 63.86%  test acc 64.79%  top5 88.59%  (21s)
+Epoch  74/200  loss 1.6319  val acc 67.28%  test acc 66.45%  top5 90.21%  (21s)  <- best, saved
+Epoch  75/200  loss 1.6420  val acc 63.58%  test acc 62.74%  top5 88.30%  (21s)
+Epoch  76/200  loss 1.6508  val acc 66.56%  test acc 65.92%  top5 90.26%  (21s)
+Epoch  77/200  loss 1.6375  val acc 64.18%  test acc 64.13%  top5 89.51%  (21s)
+Epoch  78/200  loss 1.6490  val acc 65.80%  test acc 65.44%  top5 89.66%  (21s)
+Epoch  79/200  loss 1.6242  val acc 63.56%  test acc 63.76%  top5 88.56%  (21s)
+Epoch  80/200  loss 1.5849  val acc 63.56%  test acc 64.66%  top5 89.65%  (21s)
+Epoch  81/200  loss 1.6363  val acc 66.46%  test acc 66.29%  top5 90.43%  (21s)
+Epoch  82/200  loss 1.6228  val acc 66.26%  test acc 65.93%  top5 89.76%  (21s)
+Epoch  83/200  loss 1.6232  val acc 65.72%  test acc 65.19%  top5 89.51%  (21s)
+Epoch  84/200  loss 1.5537  val acc 65.82%  test acc 65.78%  top5 89.82%  (21s)
+Epoch  85/200  loss 1.5549  val acc 66.42%  test acc 65.78%  top5 89.89%  (21s)
+Epoch  86/200  loss 1.5765  val acc 65.66%  test acc 64.57%  top5 89.41%  (21s)
+Epoch  87/200  loss 1.5833  val acc 63.34%  test acc 62.78%  top5 87.42%  (21s)
+Epoch  88/200  loss 1.5436  val acc 63.74%  test acc 63.64%  top5 88.91%  (21s)
+Epoch  89/200  loss 1.5621  val acc 66.46%  test acc 65.93%  top5 90.05%  (21s)
+Epoch  90/200  loss 1.5665  val acc 64.86%  test acc 65.65%  top5 89.36%  (21s)
+Epoch  91/200  loss 1.5626  val acc 63.96%  test acc 63.66%  top5 89.26%  (21s)
+Epoch  92/200  loss 1.4694  val acc 66.02%  test acc 65.35%  top5 89.47%  (21s)
+Epoch  93/200  loss 1.4636  val acc 67.36%  test acc 67.88%  top5 90.53%  (21s)  <- best, saved
+Epoch  94/200  loss 1.4915  val acc 64.30%  test acc 64.18%  top5 88.18%  (21s)
+Epoch  95/200  loss 1.4934  val acc 67.52%  test acc 66.49%  top5 90.12%  (21s)  <- best, saved
+Epoch  96/200  loss 1.4829  val acc 67.30%  test acc 66.92%  top5 89.95%  (21s)
+Epoch  97/200  loss 1.5714  val acc 68.18%  test acc 66.72%  top5 90.35%  (21s)  <- best, saved
+Epoch  98/200  loss 1.5764  val acc 65.66%  test acc 66.00%  top5 89.87%  (21s)
+Epoch  99/200  loss 1.5092  val acc 66.16%  test acc 65.98%  top5 90.16%  (21s)
+Epoch 100/200  loss 1.4316  val acc 67.70%  test acc 68.08%  top5 90.61%  (17s)
+Epoch 101/200  loss 1.4385  val acc 67.48%  test acc 66.80%  top5 90.33%  (11s)
+Epoch 102/200  loss 1.4431  val acc 67.38%  test acc 67.57%  top5 90.44%  (11s)
+Epoch 103/200  loss 1.4198  val acc 69.52%  test acc 69.50%  top5 91.62%  (11s)  <- best, saved
+Epoch 104/200  loss 1.3682  val acc 68.34%  test acc 68.68%  top5 91.24%  (11s)
+Epoch 105/200  loss 1.4650  val acc 68.46%  test acc 69.04%  top5 90.94%  (11s)
+Epoch 106/200  loss 1.4167  val acc 68.36%  test acc 68.41%  top5 90.68%  (11s)
+Epoch 107/200  loss 1.4835  val acc 69.70%  test acc 69.19%  top5 91.10%  (11s)  <- best, saved
+Epoch 108/200  loss 1.4592  val acc 67.90%  test acc 68.50%  top5 90.94%  (15s)
+Epoch 109/200  loss 1.2947  val acc 69.26%  test acc 68.88%  top5 90.76%  (15s)
+Epoch 110/200  loss 1.3708  val acc 68.32%  test acc 67.67%  top5 90.97%  (11s)
+Epoch 111/200  loss 1.3608  val acc 69.66%  test acc 69.98%  top5 91.99%  (11s)
+Epoch 112/200  loss 1.3455  val acc 69.42%  test acc 69.11%  top5 91.03%  (11s)
+Epoch 113/200  loss 1.3603  val acc 68.46%  test acc 68.32%  top5 90.99%  (11s)
+Epoch 114/200  loss 1.2912  val acc 68.42%  test acc 68.47%  top5 90.90%  (11s)
+Epoch 115/200  loss 1.3375  val acc 70.72%  test acc 70.25%  top5 91.79%  (11s)  <- best, saved
+Epoch 116/200  loss 1.3611  val acc 68.68%  test acc 68.45%  top5 90.43%  (11s)
+Epoch 117/200  loss 1.3054  val acc 69.00%  test acc 68.55%  top5 90.50%  (14s)
+Epoch 118/200  loss 1.3324  val acc 70.96%  test acc 70.83%  top5 91.91%  (16s)  <- best, saved
+Epoch 119/200  loss 1.2461  val acc 67.84%  test acc 66.95%  top5 90.40%  (11s)
+Epoch 120/200  loss 1.2988  val acc 72.06%  test acc 71.21%  top5 92.35%  (11s)  <- best, saved
+Epoch 121/200  loss 1.3242  val acc 70.22%  test acc 69.41%  top5 91.91%  (11s)
+Epoch 122/200  loss 1.2522  val acc 70.10%  test acc 69.50%  top5 91.48%  (11s)
+Epoch 123/200  loss 1.2247  val acc 70.78%  test acc 70.31%  top5 91.80%  (11s)
+Epoch 124/200  loss 1.1998  val acc 72.92%  test acc 71.64%  top5 92.61%  (11s)  <- best, saved
+Epoch 125/200  loss 1.2407  val acc 71.14%  test acc 70.66%  top5 92.26%  (11s)
+Epoch 126/200  loss 1.2040  val acc 71.58%  test acc 71.81%  top5 92.17%  (12s)
+Epoch 127/200  loss 1.1908  val acc 71.34%  test acc 71.31%  top5 92.22%  (17s)
+Epoch 128/200  loss 1.2127  val acc 71.34%  test acc 71.02%  top5 92.09%  (11s)
+Epoch 129/200  loss 1.2680  val acc 71.54%  test acc 71.16%  top5 92.59%  (11s)
+Epoch 130/200  loss 1.1756  val acc 72.76%  test acc 71.63%  top5 92.32%  (11s)
+Epoch 131/200  loss 1.1562  val acc 72.62%  test acc 72.22%  top5 92.42%  (11s)
+Epoch 132/200  loss 1.1731  val acc 70.52%  test acc 70.69%  top5 92.09%  (11s)
+Epoch 133/200  loss 1.1313  val acc 72.50%  test acc 72.38%  top5 92.41%  (11s)
+Epoch 134/200  loss 1.1699  val acc 71.50%  test acc 72.78%  top5 92.92%  (11s)
+Epoch 135/200  loss 1.1457  val acc 70.30%  test acc 71.11%  top5 91.73%  (11s)
+Epoch 136/200  loss 1.0793  val acc 72.22%  test acc 72.62%  top5 92.31%  (18s)
+Epoch 137/200  loss 1.0877  val acc 71.76%  test acc 72.00%  top5 92.81%  (12s)
+Epoch 138/200  loss 1.0467  val acc 72.06%  test acc 72.15%  top5 92.42%  (11s)
+Epoch 139/200  loss 1.1037  val acc 72.16%  test acc 73.48%  top5 92.68%  (11s)
+Epoch 140/200  loss 1.0827  val acc 73.22%  test acc 74.42%  top5 93.40%  (11s)  <- best, saved
+Epoch 141/200  loss 1.0187  val acc 74.10%  test acc 74.16%  top5 93.28%  (11s)  <- best, saved
+Epoch 142/200  loss 0.9662  val acc 73.28%  test acc 74.29%  top5 92.85%  (11s)
+Epoch 143/200  loss 1.0265  val acc 73.92%  test acc 73.84%  top5 92.96%  (11s)
+Epoch 144/200  loss 1.0648  val acc 74.46%  test acc 74.21%  top5 93.16%  (11s)  <- best, saved
+Epoch 145/200  loss 0.9782  val acc 75.14%  test acc 75.42%  top5 93.24%  (16s)  <- best, saved
+Epoch 146/200  loss 0.9476  val acc 75.30%  test acc 75.44%  top5 93.74%  (13s)  <- best, saved
+Epoch 147/200  loss 1.0156  val acc 74.96%  test acc 75.25%  top5 93.63%  (11s)
+Epoch 148/200  loss 0.9616  val acc 76.18%  test acc 75.62%  top5 93.64%  (11s)  <- best, saved
+Epoch 149/200  loss 0.9461  val acc 75.86%  test acc 74.95%  top5 93.32%  (11s)
+Epoch 150/200  loss 0.9063  val acc 74.48%  test acc 75.66%  top5 93.72%  (11s)
+Epoch 151/200  loss 0.9041  val acc 74.46%  test acc 74.66%  top5 93.30%  (11s)
+Epoch 152/200  loss 0.9520  val acc 76.50%  test acc 76.33%  top5 93.79%  (11s)  <- best, saved
+Epoch 153/200  loss 0.9014  val acc 76.34%  test acc 76.83%  top5 94.08%  (13s)
+Epoch 154/200  loss 0.9042  val acc 75.86%  test acc 76.17%  top5 94.11%  (17s)
+Epoch 155/200  loss 0.8570  val acc 76.86%  test acc 76.59%  top5 93.89%  (11s)  <- best, saved
+Epoch 156/200  loss 0.8497  val acc 76.10%  test acc 76.46%  top5 93.96%  (11s)
+Epoch 157/200  loss 0.9115  val acc 77.06%  test acc 76.94%  top5 94.28%  (11s)  <- best, saved
+Epoch 158/200  loss 0.9053  val acc 77.12%  test acc 77.50%  top5 94.67%  (11s)  <- best, saved
+Epoch 159/200  loss 0.8271  val acc 77.58%  test acc 77.17%  top5 94.28%  (11s)  <- best, saved
+Epoch 160/200  loss 0.8311  val acc 76.88%  test acc 76.88%  top5 94.23%  (11s)
+Epoch 161/200  loss 0.8459  val acc 77.54%  test acc 77.90%  top5 94.72%  (11s)
+Epoch 162/200  loss 0.7532  val acc 78.64%  test acc 77.92%  top5 94.85%  (19s)  <- best, saved
+Epoch 163/200  loss 0.8779  val acc 78.48%  test acc 78.38%  top5 94.96%  (11s)
+Epoch 164/200  loss 0.7899  val acc 77.24%  test acc 78.34%  top5 94.99%  (11s)
+Epoch 165/200  loss 0.8313  val acc 78.70%  test acc 78.16%  top5 94.68%  (11s)  <- best, saved
+Epoch 166/200  loss 0.8117  val acc 79.26%  test acc 79.19%  top5 95.26%  (11s)  <- best, saved
+Epoch 167/200  loss 0.7214  val acc 78.60%  test acc 78.92%  top5 94.98%  (11s)
+Epoch 168/200  loss 0.7312  val acc 78.68%  test acc 79.70%  top5 94.89%  (11s)
+Epoch 169/200  loss 0.7337  val acc 79.36%  test acc 79.13%  top5 95.01%  (11s)  <- best, saved
+Epoch 170/200  loss 0.6616  val acc 79.48%  test acc 79.73%  top5 95.08%  (15s)  <- best, saved
+Epoch 171/200  loss 0.7155  val acc 79.80%  test acc 79.67%  top5 95.37%  (14s)  <- best, saved
+Epoch 172/200  loss 0.7608  val acc 79.66%  test acc 79.94%  top5 95.11%  (11s)
+Epoch 173/200  loss 0.6981  val acc 79.96%  test acc 80.15%  top5 95.37%  (11s)  <- best, saved
+Epoch 174/200  loss 0.7250  val acc 80.16%  test acc 80.09%  top5 95.27%  (11s)  <- best, saved
+Epoch 175/200  loss 0.7076  val acc 80.10%  test acc 80.14%  top5 95.36%  (11s)
+Epoch 176/200  loss 0.6951  val acc 80.40%  test acc 80.29%  top5 95.32%  (11s)  <- best, saved
+Epoch 177/200  loss 0.7185  val acc 80.74%  test acc 80.64%  top5 95.09%  (11s)  <- best, saved
+Epoch 178/200  loss 0.6859  val acc 80.58%  test acc 80.81%  top5 95.44%  (11s)
+Epoch 179/200  loss 0.6747  val acc 80.92%  test acc 81.11%  top5 95.46%  (19s)  <- best, saved
+Epoch 180/200  loss 0.6414  val acc 80.82%  test acc 80.89%  top5 95.41%  (11s)
+Epoch 181/200  loss 0.6959  val acc 81.04%  test acc 81.27%  top5 95.46%  (11s)  <- best, saved
+Epoch 182/200  loss 0.6481  val acc 81.00%  test acc 81.46%  top5 95.76%  (11s)
+Epoch 183/200  loss 0.6752  val acc 81.12%  test acc 81.52%  top5 95.58%  (11s)  <- best, saved
+Epoch 184/200  loss 0.6957  val acc 81.32%  test acc 81.45%  top5 95.75%  (11s)  <- best, saved
+Epoch 185/200  loss 0.6450  val acc 81.50%  test acc 81.62%  top5 95.81%  (11s)  <- best, saved
+Epoch 186/200  loss 0.6698  val acc 81.90%  test acc 81.63%  top5 95.88%  (11s)  <- best, saved
+Epoch 187/200  loss 0.6776  val acc 81.80%  test acc 82.02%  top5 95.87%  (19s)
+Epoch 188/200  loss 0.6432  val acc 81.70%  test acc 81.99%  top5 95.82%  (11s)
+Epoch 189/200  loss 0.5988  val acc 81.68%  test acc 82.10%  top5 95.83%  (11s)
+Epoch 190/200  loss 0.6263  val acc 82.08%  test acc 82.13%  top5 95.88%  (11s)  <- best, saved
+Epoch 191/200  loss 0.6218  val acc 81.98%  test acc 82.01%  top5 95.83%  (11s)
+Epoch 192/200  loss 0.6515  val acc 82.38%  test acc 82.05%  top5 95.90%  (11s)  <- best, saved
+Epoch 193/200  loss 0.6257  val acc 82.24%  test acc 82.00%  top5 95.92%  (11s)
+Epoch 194/200  loss 0.5619  val acc 82.10%  test acc 81.96%  top5 96.00%  (11s)
+Epoch 195/200  loss 0.6511  val acc 82.12%  test acc 82.10%  top5 95.93%  (13s)
+Epoch 196/200  loss 0.6561  val acc 82.18%  test acc 82.09%  top5 96.02%  (17s)
+Epoch 197/200  loss 0.6221  val acc 82.50%  test acc 82.18%  top5 96.02%  (11s)  <- best, saved
+Epoch 198/200  loss 0.5708  val acc 82.38%  test acc 82.10%  top5 96.03%  (11s)
+Epoch 199/200  loss 0.6433  val acc 82.46%  test acc 82.16%  top5 95.97%  (11s)
+Epoch 200/200  loss 0.6060  val acc 82.36%  test acc 82.12%  top5 96.01%  (11s)
+Done. Checkpoint chosen by VALIDATION: epoch 197 | val 82.50% | test 82.18% | last epoch test 82.12% -> experiments/teacher_val/teacher_resnet34_val.pth

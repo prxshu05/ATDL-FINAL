@@ -1,0 +1,22 @@
+[18:52:31] === Run 'base_hard' [v2] (hard labels, 1 students, seed 1) on cuda | budget 250000 (seed 250000) | 4 selection rounds | PGA lam_intra 0.1 lam_old 0.1 | class balance power 0.0 ===
+[18:52:33] Teacher (resnet34) test accuracy 82.18% | teacher query budget 250000 (teacher sees ONLY noise images)
+[18:54:34] [A] 250000 noise images -> teacher | label classes present 94/100, classes with <100 images 39, top-10 classes hold 52.6% of the images
+[18:54:34] [A] training student 1/1 on 250000 images for 1 epochs
+[18:55:55]     A-s0 epoch 1/1  loss 2.4031  lr 0.1000  (80s)
+[18:55:56]     A student 0: test acc 5.22% (top5 14.28%) | agree w/ teacher 5.46% | KL(T||S) 6.063
+[18:55:57]     A ENSEMBLE of 1 students: test acc 5.22% (top5 14.28%) | agree w/ teacher 5.46% | KL(T||S) 6.063
+[18:55:57] [B] no selection (the whole budget is the random seed)
+[18:55:57] [B] D = 250000 teacher-labelled noise images | teacher queries 250000 | classes present 94/100, classes with <100 images 39, top-10 classes hold 52.6%
+[18:55:57] [C] training student 1/1 on 250000 images for 40 epochs
+[19:06:07]     C-s0 epoch 8/40  loss 2.1061  lr 0.0923  (609s)
+[19:16:15]     C-s0 epoch 16/40  loss 1.9884  lr 0.0677  (1218s)
+[19:26:23]     C-s0 epoch 24/40  loss 1.9372  lr 0.0361  (1826s)
+[19:36:30]     C-s0 epoch 32/40  loss 1.5713  lr 0.0100  (2433s)
+[19:46:16]     C-s0 epoch 40/40  loss 1.1722  lr 0.0000  (3019s)
+[19:46:17]     C student 0: test acc 24.35% (top5 42.82%) | agree w/ teacher 25.71% | KL(T||S) 5.147
+[19:46:17]     C ENSEMBLE of 1 students: test acc 24.35% (top5 42.82%) | agree w/ teacher 25.71% | KL(T||S) 5.147
+[19:46:18] [E] final single resnet18: 250000 teacher-labelled + 0 PGA + 0 extra noise (ensemble-labelled, weight 0.5) = 250000 images, 0 epochs
+[19:46:18] [E] starting from the best stage-C student (0, 24.35%), fine-tuning at lr 0.02
+[19:46:18]     FINAL single ResNet-18: test acc 24.35% (top5 42.82%) | agree w/ teacher 25.71% | KL(T||S) 5.147
+[19:46:18] 
+Done. Teacher 82.18% | teacher queries 250000 | ensemble of 1: 24.35% | single final student: 24.35%. Results in experiments/v2_kd/base_hard

@@ -1,0 +1,23 @@
+[19:45:52] === Run 'nodiv_soft' [v2] (soft labels, 3 students, seed 1) on cuda | budget 250000 (seed 50000) | 4 selection rounds | PGA lam_intra 0.0 lam_old 0.0 | class balance power 0.5 ===
+[19:45:56] Teacher (resnet34) test accuracy 82.18% | teacher query budget 250000 (teacher sees ONLY noise images)
+[19:45:56] [A] seed loaded from disk (50000 images, teacher queries 50000)
+[19:45:57] [A] student 0: loaded from disk
+[19:45:57] [A] student 1: loaded from disk
+[19:45:58] [A] student 2: loaded from disk
+[19:45:58] [B] selected images loaded from disk (200000, teacher queries 250000)
+[19:45:58] [B] D = 250000 teacher-labelled noise images | teacher queries 250000 | classes present 95/100, classes with <100 images 31, top-10 classes hold 42.0%
+[19:45:58] [C] student 0: loaded from disk
+[19:45:59] [C] student 1: loaded from disk
+[19:45:59] [C] student 2: loaded from disk
+[20:47:34]     PGA on student: 20000 images | mean student conf on target 0.578 | reached tau 47.5% | restarts 8246 | intra-class SKL 0.000 | KL(new||old) 0.000
+[20:47:44] [D] kept 10906/20000 PGA images (all 3 students say the target class, ensemble conf >= 0.8) | [diagnostic only, not a query] teacher would agree for 91.4% of them
+[20:49:59] [E] final single resnet18: 250000 teacher-labelled + 10906 PGA + 250000 extra noise (ensemble-labelled, weight 0.5) = 510906 images, 10 epochs
+[20:50:00] [E] starting from the best stage-C student (0, 42.33%), fine-tuning at lr 0.02
+[20:55:13]     final epoch 2/10  loss 0.2827  lr 0.0194  (313s)
+[21:00:23]     final epoch 4/10  loss 0.2444  lr 0.0150  (623s)
+[21:05:34]     final epoch 6/10  loss 0.2142  lr 0.0083  (934s)
+[21:10:44]     final epoch 8/10  loss 0.2169  lr 0.0023  (1244s)
+[21:15:55]     final epoch 10/10  loss 0.1804  lr 0.0000  (1555s)
+[21:15:56]     FINAL single ResNet-18: test acc 42.69% (top5 64.29%) | agree w/ teacher 44.67% | KL(T||S) 2.399
+[21:15:56] 
+Done. Teacher 82.18% | teacher queries 250000 | ensemble of 3: 43.16% | single final student: 42.69%. Results in experiments/v2_kd/nodiv_soft

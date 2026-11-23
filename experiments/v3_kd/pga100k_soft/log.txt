@@ -1,0 +1,23 @@
+[09:14:36] === Run 'pga100k_soft' [v2] (soft labels, 3 students, seed 1) on cuda | budget 250000 (seed 50000) | 4 selection rounds | PGA lam_intra 0.1 lam_old 0.1 | class balance power 0.5 | mix none | init random | hard_soften 1.0 ===
+[09:14:42] Teacher (resnet34) test accuracy 82.17% | teacher query budget 250000 (teacher sees ONLY noise images)
+[09:14:42] [A] seed loaded from disk (50000 images, teacher queries 50000)
+[09:14:43] [A] student 0: loaded from disk
+[09:14:44] [A] student 1: loaded from disk
+[09:14:45] [A] student 2: loaded from disk
+[09:14:45] [B] selected images loaded from disk (200000, teacher queries 250000)
+[09:14:45] [B] D = 250000 teacher-labelled noise images | teacher queries 250000 | classes present 95/100, classes with <100 images 31, top-10 classes hold 42.0%
+[09:14:46] [C] student 0: loaded from disk
+[09:14:47] [C] student 1: loaded from disk
+[09:14:48] [C] student 2: loaded from disk
+[14:49:49]     PGA on student: 100000 images | mean student conf on target 0.580 | reached tau 46.4% | restarts 40936 | intra-class SKL 1.235 | KL(new||old) 0.471
+[14:50:42] [D] kept 54126/100000 PGA images (all 3 students say the target class, ensemble conf >= 0.8) | [diagnostic only, not a query] teacher would agree for 90.3% of them
+[14:55:50] [E] final single resnet18: 250000 teacher-labelled + 54126 PGA + 250000 extra noise (ensemble-labelled, weight 0.5) = 554126 images, 10 epochs
+[14:55:50] [E] starting from the best stage-C student (0, 42.33%), fine-tuning at lr 0.02
+[14:58:29]     final epoch 2/10  loss 0.2424  lr 0.0194  (159s)
+[15:01:06]     final epoch 4/10  loss 0.2836  lr 0.0150  (316s)
+[15:03:42]     final epoch 6/10  loss 0.1942  lr 0.0083  (472s)
+[15:06:19]     final epoch 8/10  loss 0.1823  lr 0.0023  (628s)
+[15:08:55]     final epoch 10/10  loss 0.1419  lr 0.0000  (785s)
+[15:08:56]     FINAL single ResNet-18: test acc 42.63% (top5 64.20%) | agree w/ teacher 44.62% | KL(T||S) 2.414
+[15:08:56] 
+Done. Teacher 82.17% | teacher queries 250000 | ensemble of 3: 43.16% | single final student: 42.63%. Results in experiments/v3_kd/pga100k_soft

@@ -1,0 +1,45 @@
+{
+  "teacher_acc": 82.20000267028809,
+  "A_students": {
+    "0": {
+      "acc": 4.320000112056732,
+      "top5": 14.519999921321869,
+      "agreement": 4.470000043511391,
+      "kl_teacher_student": 6.16071891784668
+    }
+  },
+  "A_ensemble": {
+    "acc": 4.320000112056732,
+    "top5": 14.519999921321869,
+    "agreement": 4.470000043511391,
+    "kl_teacher_student": 6.16071891784668
+  },
+  "D": {
+    "size": 250000,
+    "teacher_queries": 250000,
+    "classes_present": 91,
+    "classes_below_100": 41,
+    "top10_share": 52.8532
+  },
+  "C_students": {
+    "0": {
+      "acc": 24.609999358654022,
+      "top5": 42.4699991941452,
+      "agreement": 25.699999928474426,
+      "kl_teacher_student": 4.8381547927856445
+    }
+  },
+  "C_ensemble": {
+    "acc": 24.609999358654022,
+    "top5": 42.4699991941452,
+    "agreement": 25.699999928474426,
+    "kl_teacher_student": 4.8381547927856445
+  },
+  "final_single_student": {
+    "acc": 24.609999358654022,
+    "top5": 42.4699991941452,
+    "agreement": 25.699999928474426,
+    "kl_teacher_student": 4.8381547927856445
+  },
+  "final_train_size": 250000
+}

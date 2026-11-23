@@ -1,0 +1,21 @@
+[19:43:45] === Run 'nopga_hard' [v2] (hard labels, 3 students, seed 1) on cuda | budget 250000 (seed 50000) | 4 selection rounds | PGA lam_intra 0.1 lam_old 0.1 | class balance power 0.5 | mix none | init random | hard_soften 1.0 ===
+[19:43:49] Teacher (resnet34) test accuracy 82.18% | teacher query budget 250000 (teacher sees ONLY noise images)
+[19:43:49] [A] seed loaded from disk (50000 images, teacher queries 50000)
+[19:43:50] [A] student 0: loaded from disk
+[19:43:50] [A] student 1: loaded from disk
+[19:43:51] [A] student 2: loaded from disk
+[19:43:51] [B] selected images loaded from disk (200000, teacher queries 250000)
+[19:43:51] [B] D = 250000 teacher-labelled noise images | teacher queries 250000 | classes present 94/100, classes with <100 images 31, top-10 classes hold 45.0%
+[19:43:51] [C] student 0: loaded from disk
+[19:43:52] [C] student 1: loaded from disk
+[19:43:52] [C] student 2: loaded from disk
+[19:51:27] [E] final single resnet18: 250000 teacher-labelled + 0 PGA + 250000 extra noise (ensemble-labelled, weight 0.5) = 500000 images, 10 epochs
+[19:51:27] [E] starting from the best stage-C student (1, 30.97%), fine-tuning at lr 0.02
+[19:54:33]     final epoch 2/10  loss 1.1850  lr 0.0194  (185s)
+[19:57:28]     final epoch 4/10  loss 1.5451  lr 0.0150  (360s)
+[20:05:02]     final epoch 6/10  loss 0.9256  lr 0.0083  (814s)
+[20:12:47]     final epoch 8/10  loss 1.0391  lr 0.0023  (1280s)
+[20:20:33]     final epoch 10/10  loss 0.8745  lr 0.0000  (1746s)
+[20:20:35]     FINAL single ResNet-18: test acc 31.50% (top5 53.14%) | agree w/ teacher 33.25% | KL(T||S) 4.181
+[20:20:35] 
+Done. Teacher 82.18% | teacher queries 250000 | ensemble of 3: 31.89% | single final student: 31.50%. Results in experiments/v3_kd/nopga_hard

@@ -1,0 +1,22 @@
+[11:55:40] === Run 'base500k_soft' [v2] (soft labels, 1 students, seed 1) on cuda | budget 500000 (seed 500000) | 4 selection rounds | PGA lam_intra 0.1 lam_old 0.1 | class balance power 0.0 | mix none | init random | hard_soften 1.0 ===
+[11:55:46] Teacher (resnet34) test accuracy 82.20% | teacher query budget 500000 (teacher sees ONLY noise images)
+[12:09:38] [A] 500000 noise images -> teacher | label classes present 96/100, classes with <100 images 33, top-10 classes hold 52.5% of the images
+[12:09:38] [A] training student 1/1 on 500000 images for 1 epochs
+[12:11:12]     A-s0 epoch 1/1  loss 0.6135  lr 0.1000  (94s)
+[12:11:13]     A student 0: test acc 7.69% (top5 22.47%) | agree w/ teacher 8.15% | KL(T||S) 4.766
+[12:11:13]     A ENSEMBLE of 1 students: test acc 7.69% (top5 22.47%) | agree w/ teacher 8.15% | KL(T||S) 4.766
+[12:11:13] [B] no selection (the whole budget is the random seed)
+[12:11:13] [B] D = 500000 teacher-labelled noise images | teacher queries 500000 | classes present 96/100, classes with <100 images 33, top-10 classes hold 52.5%
+[12:11:14] [C] training student 1/1 on 500000 images for 40 epochs
+[12:29:07]     C-s0 epoch 8/40  loss 0.5113  lr 0.0923  (1074s)
+[12:57:04]     C-s0 epoch 16/40  loss 0.4693  lr 0.0677  (2751s)
+[13:25:36]     C-s0 epoch 24/40  loss 0.4580  lr 0.0361  (4462s)
+[13:47:06]     C-s0 epoch 32/40  loss 0.3474  lr 0.0100  (5753s)
+[14:08:37]     C-s0 epoch 40/40  loss 0.2966  lr 0.0000  (7044s)
+[14:08:38]     C student 0: test acc 37.90% (top5 60.93%) | agree w/ teacher 39.97% | KL(T||S) 2.666
+[14:08:40]     C ENSEMBLE of 1 students: test acc 37.90% (top5 60.93%) | agree w/ teacher 39.97% | KL(T||S) 2.666
+[14:08:40] [E] final single resnet18: 500000 teacher-labelled + 0 PGA + 0 extra noise (ensemble-labelled, weight 0.5) = 500000 images, 0 epochs
+[14:08:41] [E] starting from the best stage-C student (0, 37.90%), fine-tuning at lr 0.02
+[14:08:42]     FINAL single ResNet-18: test acc 37.90% (top5 60.93%) | agree w/ teacher 39.97% | KL(T||S) 2.666
+[14:08:42] 
+Done. Teacher 82.20% | teacher queries 500000 | ensemble of 1: 37.90% | single final student: 37.90%. Results in experiments/v3_kd/base500k_soft

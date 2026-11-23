@@ -1,0 +1,105 @@
+{
+  "teacher_acc": 82.17999935150146,
+  "A_students": {
+    "0": {
+      "acc": 25.26000142097473,
+      "top5": 46.970000863075256,
+      "agreement": 26.829999685287476,
+      "kl_teacher_student": 3.4528660774230957
+    }
+  },
+  "A_ensemble": {
+    "acc": 25.26000142097473,
+    "top5": 46.970000863075256,
+    "agreement": 26.829999685287476,
+    "kl_teacher_student": 3.4528660774230957
+  },
+  "selection_rounds": [
+    {
+      "round": 1,
+      "n": 50000,
+      "teacher_label_is_intended_class": 29.471999406814575,
+      "disagreement_selected": 0.0,
+      "disagreement_pool": 0.0,
+      "classes_present": 92,
+      "classes_below_100": 39,
+      "top10_share": 42.517,
+      "teacher_queries": 100000,
+      "ensemble_acc_after": 31.110000610351562
+    },
+    {
+      "round": 2,
+      "n": 50000,
+      "teacher_label_is_intended_class": 27.858000993728638,
+      "disagreement_selected": 0.0,
+      "disagreement_pool": 0.0,
+      "classes_present": 92,
+      "classes_below_100": 32,
+      "top10_share": 39.970666666666666,
+      "teacher_queries": 150000,
+      "ensemble_acc_after": 33.34999978542328
+    },
+    {
+      "round": 3,
+      "n": 50000,
+      "teacher_label_is_intended_class": 27.314001321792603,
+      "disagreement_selected": 0.0,
+      "disagreement_pool": 0.0,
+      "classes_present": 93,
+      "classes_below_100": 31,
+      "top10_share": 38.974,
+      "teacher_queries": 200000,
+      "ensemble_acc_after": 36.28000020980835
+    },
+    {
+      "round": 4,
+      "n": 50000,
+      "teacher_label_is_intended_class": 27.088001370429993,
+      "disagreement_selected": 0.0,
+      "disagreement_pool": 0.0,
+      "classes_present": 94,
+      "classes_below_100": 30,
+      "top10_share": 38.3828,
+      "teacher_queries": 250000
+    }
+  ],
+  "D": {
+    "size": 250000,
+    "teacher_queries": 250000,
+    "classes_present": 94,
+    "classes_below_100": 30,
+    "top10_share": 38.3828
+  },
+  "C_students": {
+    "0": {
+      "acc": 38.96999955177307,
+      "top5": 62.16999888420105,
+      "agreement": 40.83000123500824,
+      "kl_teacher_student": 2.5991501808166504
+    }
+  },
+  "C_ensemble": {
+    "acc": 38.96999955177307,
+    "top5": 62.16999888420105,
+    "agreement": 40.83000123500824,
+    "kl_teacher_student": 2.5991501808166504
+  },
+  "pga": {
+    "generated": 20000,
+    "kept": 10351,
+    "diag_teacher_agrees_with_kept": 79.40295338630676,
+    "conf": 0.5794108558654785,
+    "reached_tau": 0.43345,
+    "restarts": 7800,
+    "intra_skl": 1.0949417605996132,
+    "kl_new_old": 0.4578895203769207,
+    "student_passes": 6000000
+  },
+  "final_single_student": {
+    "acc": 38.92999887466431,
+    "top5": 61.11000180244446,
+    "agreement": 40.549999475479126,
+    "kl_teacher_student": 2.582893133163452
+  },
+  "final_train_size": 510351
+}

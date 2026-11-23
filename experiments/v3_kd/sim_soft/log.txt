@@ -1,0 +1,42 @@
+[03:46:10] === Run 'sim_soft' [v2] (soft labels, 3 students, seed 1) on cuda | budget 250000 (seed 50000) | 4 selection rounds | PGA lam_intra 0.1 lam_old 0.1 | class balance power 0.5 | mix none | init experiments/v3_kd/simclr_pre/simclr_noise.pth | hard_soften 1.0 ===
+[03:46:16] Teacher (resnet34) test accuracy 82.18% | teacher query budget 250000 (teacher sees ONLY noise images)
+[03:46:16] [A] seed loaded from disk (50000 images, teacher queries 50000)
+[03:46:17] [A] student 0: loaded from disk
+[03:46:18] [A] student 1: loaded from disk
+[03:46:19] [A] student 2: loaded from disk
+[03:46:19] [B] selected images loaded from disk (200000, teacher queries 250000)
+[03:46:19] [B] D = 250000 teacher-labelled noise images | teacher queries 250000 | classes present 95/100, classes with <100 images 31, top-10 classes hold 42.0%
+[03:46:20] [C] training student 1/3 on 250000 images for 40 epochs
+[04:01:49]     C-s0 epoch 8/40  loss 0.5885  lr 0.0923  (930s)
+[04:17:14]     C-s0 epoch 16/40  loss 0.5280  lr 0.0677  (1854s)
+[04:32:41]     C-s0 epoch 24/40  loss 0.5048  lr 0.0361  (2781s)
+[04:48:04]     C-s0 epoch 32/40  loss 0.3900  lr 0.0100  (3704s)
+[05:03:29]     C-s0 epoch 40/40  loss 0.2797  lr 0.0000  (4629s)
+[05:03:31]     C student 0: test acc 41.76% (top5 64.49%) | agree w/ teacher 43.89% | KL(T||S) 2.394
+[05:03:32] [C] training student 2/3 on 250000 images for 40 epochs
+[05:17:56]     C-s1 epoch 8/40  loss 0.5594  lr 0.0923  (864s)
+[05:28:19]     C-s1 epoch 16/40  loss 0.5816  lr 0.0677  (1488s)
+[05:41:48]     C-s1 epoch 24/40  loss 0.4367  lr 0.0361  (2296s)
+[05:56:58]     C-s1 epoch 32/40  loss 0.3961  lr 0.0100  (3207s)
+[06:12:10]     C-s1 epoch 40/40  loss 0.3356  lr 0.0000  (4118s)
+[06:12:11]     C student 1: test acc 42.21% (top5 65.54%) | agree w/ teacher 44.52% | KL(T||S) 2.394
+[06:12:12] [C] training student 3/3 on 250000 images for 40 epochs
+[06:27:16]     C-s2 epoch 8/40  loss 0.5620  lr 0.0923  (904s)
+[06:42:27]     C-s2 epoch 16/40  loss 0.5275  lr 0.0677  (1815s)
+[06:57:37]     C-s2 epoch 24/40  loss 0.4557  lr 0.0361  (2725s)
+[07:12:47]     C-s2 epoch 32/40  loss 0.4048  lr 0.0100  (3634s)
+[07:27:56]     C-s2 epoch 40/40  loss 0.2918  lr 0.0000  (4544s)
+[07:27:58]     C student 2: test acc 41.91% (top5 65.27%) | agree w/ teacher 44.03% | KL(T||S) 2.467
+[07:28:03]     C ENSEMBLE of 3 students: test acc 43.30% (top5 65.78%) | agree w/ teacher 45.61% | KL(T||S) 2.271
+[09:00:18]     PGA on student: 20000 images | mean student conf on target 0.584 | reached tau 47.1% | restarts 8096 | intra-class SKL 1.226 | KL(new||old) 0.516
+[09:00:34] [D] kept 10957/20000 PGA images (all 3 students say the target class, ensemble conf >= 0.8) | [diagnostic only, not a query] teacher would agree for 89.6% of them
+[09:18:36] [E] final single resnet18: 250000 teacher-labelled + 10957 PGA + 250000 extra noise (ensemble-labelled, weight 0.5) = 510957 images, 10 epochs
+[09:18:37] [E] starting from the best stage-C student (1, 42.21%), fine-tuning at lr 0.02
+[09:26:25]     final epoch 2/10  loss 0.3014  lr 0.0194  (468s)
+[09:34:14]     final epoch 4/10  loss 0.2754  lr 0.0150  (937s)
+[09:42:03]     final epoch 6/10  loss 0.2097  lr 0.0083  (1406s)
+[09:49:53]     final epoch 8/10  loss 0.2548  lr 0.0023  (1876s)
+[09:57:11]     final epoch 10/10  loss 0.1876  lr 0.0000  (2314s)
+[09:57:13]     FINAL single ResNet-18: test acc 42.01% (top5 64.56%) | agree w/ teacher 44.11% | KL(T||S) 2.485
+[09:57:13] 
+Done. Teacher 82.18% | teacher queries 250000 | ensemble of 3: 43.30% | single final student: 42.01%. Results in experiments/v3_kd/sim_soft

@@ -1,0 +1,9 @@
+cifar-100-python/
+*.tar.gz
+*.pth
+*.pt
+__pycache__/
+*.pyc
+report/report.html
+report/*.zip
+.ipynb_checkpoints/
